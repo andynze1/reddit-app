@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/andynze1/reddit-app.git'
+                git branch: 'master', url: 'https://github.com/andynze1/reddit-app.git'
             }
         }
         stage("Sonarqube Analysis") {
